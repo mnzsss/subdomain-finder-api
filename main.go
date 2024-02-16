@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"net/http"
 	handler "subdomain-finder-api/api"
 )
@@ -11,6 +12,6 @@ func main() {
 	err := http.ListenAndServe(":3333", nil)
 
 	if err != nil {
-		panic(err)
+		fmt.Println("Error on start server:", err)
 	}
 }
