@@ -19,6 +19,10 @@ func Subfinder(domain string) (any, error) {
 		Timeout:            3 * 60, // 3 mins
 		MaxEnumerationTime: 10,     // MaxEnumerationTime is the maximum amount of time in mins to wait for enumeration
 		JSON:               true,   // JSON specifies whether to use JSON for output
+		All:                true,   // All specifies whether to use all sources for enumeration
+		HostIP:             true,   // HostIP specifies whether to include the IP address of the host in the output
+		Verbose:            true,   // Verbose specifies whether to enable verbose logging
+		Statistics:         true,   // Statistics specifies whether to print statistics about the enumeration
 	}
 
 	// disable timestamps in logs / configure logger
